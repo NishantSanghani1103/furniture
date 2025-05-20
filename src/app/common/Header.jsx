@@ -22,6 +22,9 @@ export default function Header() {
 
     let [mirrorLivingMenu, setmirrorLivingMenu] = useState(false)
 
+
+
+
     return (
         <>
             <header className='max-w-full bg-white shadow-lg'>
@@ -34,9 +37,14 @@ export default function Header() {
                         <div className='w-full flex justify-end lg:hidden  ' >
                             <IoMdClose className=' border-1 h-[30px] w-[30px] text-gray-400 rounded-[50%]  text-xl' onClick={() => setmobileNav(false)} />
                         </div>
+
+                        <div className='max-w-full flex flex-col text-center item-center   ' id='header-mid-top'>
+                            <Link href={'/'} className='text-[12px] py-3 '>Contact us 24/7 : +91-9781234560  </Link>
+                            <Link href={'/login'} className='text-[12px] py-3 hover:text-[#c09578] hover:cursor-pointer ' onClick={() => setmobileNav(false)}>Login / Register </Link>
+                        </div>
                         <ul className='flex lg:gap-8 sm:gap-8 gap-5 w-full justify-center items-center  lg:flex-row flex-col'>
                             <li className=' lg:w-auto  lg:border-0  border-b w-full lg:pb-0  pb-1 border-gray-300' >
-                                <Link href={'/'} className='hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px]'>
+                                <Link href={'/'} className='hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px]' onClick={(() => setmobileNav(false))}>
                                     Home
                                 </Link>
                             </li>
@@ -58,7 +66,11 @@ export default function Header() {
 
                                 <div className={`w-full  bg-white   p-3 ${livingMenu ? 'scale-100 block' : 'scale-0 hidden'} duration- origin-top`}>
 
-                                    <button className={`w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1 `} onClick={() => settablelivingMenu(!tablelivingMenu)}>Tables
+                                    <button className={`w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1 `} onClick={() => {
+                                        setmirrorLivingMenu(false),
+                                            setlivingStorageLivingMenu(false)
+                                        settablelivingMenu(!tablelivingMenu)
+                                    }}>Tables
 
                                         {
 
@@ -74,7 +86,9 @@ export default function Header() {
                                         <nav>
                                             <ul>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Side and End Tables</p>
+                                                    <Link href={'/product-listing'} onClick={() => {
+                                                        setmobileNav(false)
+                                                    }}>Side and End Tables</Link>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
                                                     <p>Nest Of Tables</p>
@@ -97,7 +111,8 @@ export default function Header() {
                                     </div>
                                     <button className='w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1 ' onClick={() => {
                                         settablelivingMenu(false),
-                                            setlivingStorageLivingMenu(!livingStorageLivingMenu)
+                                            setmirrorLivingMenu(false)
+                                        setlivingStorageLivingMenu(!livingStorageLivingMenu)
 
                                     }}>living storage
                                         {
@@ -145,10 +160,10 @@ export default function Header() {
                                         {
 
                                             mirrorLivingMenu
-                                            ?
-                                            <FaAngleUp className='text-[10px] group-hover:text-[#c09578] font-normal' />
-                                            :
-                                            <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                                ?
+                                                <FaAngleUp className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                                :
+                                                <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
                                         }
                                     </button>
 
@@ -188,6 +203,7 @@ export default function Header() {
                     </div>
                 </div>
 
+
                 {/* MOBILE AND TABLET MENU */}
 
                 <hr className='h-px bg-gray-200 border-0 lg:block  hidden ' />
@@ -219,8 +235,8 @@ export default function Header() {
                                         </div>
                                     </li>
                                     <li>
-                                        <div className='bg-white border-1 border-gray-200 rounded-sm h-[40px] w-[40px] flex justify-center items-center cursor-pointer'>
-                                            <FaHeart className='text-xl' />
+                                        <div className='bg-white border-1 group border-gray-200 rounded-sm h-[40px] w-[40px] flex justify-center items-center cursor-pointer'>
+                                            <FaHeart className='text-xl group-hover:text-[#c09578] ' />
                                         </div>
                                     </li>
                                     <li>
@@ -263,7 +279,7 @@ export default function Header() {
                             <li className="w-auto border-0 pb-0">
                                 <Link
                                     href="/"
-                                    className="hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px]"
+                                    className="text-[#c09578] font-semibold uppercase  text-[13px]"
                                 >
                                     Home
                                 </Link>
@@ -284,7 +300,7 @@ export default function Header() {
                                             <nav>
                                                 <ul>
                                                     <li className='py-1'>
-                                                        <p className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Side and End Tables</p>
+                                                        <Link href={'/product-listing'} className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Side and End Tables</Link>
                                                     </li>
                                                     <li className='py-1'>
                                                         <p className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Nest Of Tables</p>
@@ -358,7 +374,7 @@ export default function Header() {
                                     sofa
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
                                 </Link>
-                                <div className='bg-white shadow-lg w-[580px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1'>
+                                <div className='bg-white shadow-lg w-[580px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
                                     <div className='w-full grid grid-cols-3 gap-5 p-5' id='megaMenu-living'>
                                         <div>
                                             <h2 className='text-md uppercase font-semibold py-1'>Sofa Cum Bed</h2>
@@ -407,6 +423,7 @@ export default function Header() {
                                         </div>
                                     </div>
                                 </div>
+
                             </li>
 
                             <li className="w-auto group border-0 pb-0 relative">
@@ -418,22 +435,22 @@ export default function Header() {
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
                                 </Link>
 
-                                <div className='bg-white shadow-lg w-[200px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1'>
+                                <div className='bg-white shadow-lg w-[200px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
                                     <div className='w-full  p-5' id='megaMenu-living'>
                                         <div>
                                             <nav>
                                                 <ul>
                                                     <li className='py-1'>
-                                                        <p className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>About Us</p>
+                                                        <Link href={'/about'} className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>About Us</Link>
                                                     </li>
                                                     <li className='py-1'>
-                                                        <p className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Carts</p>
+                                                        <Link href={'/cart'} className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Carts</Link>
                                                     </li>
                                                     <li className='py-1'>
-                                                        <p className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Checkout</p>
+                                                        <Link href={'/checkout'} className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Checkout</Link>
                                                     </li>
                                                     <li className='py-1'>
-                                                        <p className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Frequently Questions</p>
+                                                        <Link href={'/frequently-questions'} className='text-sm text-gray-700 font-normal hover:text-[#c09578] cursor-pointer'>Frequently Questions</Link>
                                                     </li>
                                                 </ul>
                                             </nav>
@@ -446,7 +463,7 @@ export default function Header() {
 
                             <li className="w-auto border-0 pb-0">
                                 <Link
-                                    href="/"
+                                    href={'/contact-us'}
                                     className="hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px]"
                                 >
                                     contact us
@@ -456,7 +473,7 @@ export default function Header() {
                     </div>
                 </div>
 
-                {/* LEPTOP AND DESKTOP Menu */}
+                {/* LEPTOP AND DESKTOP MENU ENDED */}
                 <div className={`bg-white h-screen w-[350px] fixed right-0 top-0 duration-500 z-999 p-5 ${cartItems ? 'right-0' : 'right-[-100%]'} hidden lg:block sm:block shadow-lg`} id='cartItems'>
                     <div className='flex items-center justify-between border-b-1 py-5 border-gray-400'>
                         <p className='font-semibold text-xl'>Cart</p>

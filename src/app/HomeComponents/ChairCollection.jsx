@@ -4,8 +4,8 @@ import React from 'react'
 export default function ChairCollection() {
     return (
         <>
-            <section className='max-w-[1320px] mx-auto mt-12' id='chairCollection'>
-                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-3 justify-center gap-5' id='chairCollection-mid'>
+            <section className='max-w-full border-b-1 border-gray-200 pb-12 my-12' id='chairCollection'>
+                <div className='max-w-[1320px] mx-auto grid lg:grid-cols-3 sm:grid-cols-3 justify-center gap-5' id='chairCollection-mid'>
                     <div className='overflow-hidden relative'>
                         <figure>
                             <img src="/images/124ad5ba-005d-4b47-a707-a9a87033833a-1670180400.webp" className='hover:scale-110 duration-700' alt="" />
