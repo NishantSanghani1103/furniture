@@ -35,7 +35,7 @@ export default function ProductListing() {
                 <div className='max-w-[1320px] lg:mx-auto mx-5 ' id='product-listing-category-mid'>
                     <div className='max-w-full grid lg:grid-cols-[25%_auto] gap-8'>
                         <div className='lg:order-1 order-2' id='category'>
-                            <div className='h-[500px] overflow-y-scroll border-b-1 border-gray-100 mb-10' >
+                            <div className='h-[500px] overflow-y-scroll border-b-1 border-gray-100 mb-10 custom-scrollbar' >
                                 <h2 className='text-3xl font-semibold capitalize'>Categories</h2>
                                 <div className='my-6' id='product-listing-category-items'>
                                     <div id='product-listing-category-items'>
@@ -238,7 +238,7 @@ export default function ProductListing() {
                                 </div>
                             </div>
 
-                            <div className='h-[400px] overflow-y-scroll border-b-1 border-gray-100 mb-10' id='material'>
+                            <div className='h-[400px] overflow-y-scroll border-b-1 border-gray-100 mb-10 custom-scrollbar' id='material'>
                                 <h2 className='text-3xl font-semibold capitalize'>Material</h2>
                                 <div className='my-6' id='product-listing-material-items'>
 

@@ -22,12 +22,18 @@ export default function Header() {
 
     let [mirrorLivingMenu, setmirrorLivingMenu] = useState(false)
 
+    let [sofaMenu, setsofaMenu] = useState(false)
 
+    let [sofaBedSofaMenu, setsofaBedSofaMenu] = useState(false)
+    let [sofaSetSofaMenu, setsofaSetSofaMenu] = useState(false)
+    let [sofaSwingSofaMenu, setsofaSwingSofaMenu] = useState(false)
+
+    let [pageMenu, setpageMenu] = useState(false)
 
 
     return (
         <>
-            <header className='max-w-full bg-white shadow-lg'>
+            <header className='max-w-full lg:static  sticky top-0 z-9999 bg-white shadow-lg'>
 
 
                 {/* MOBILE AND TABLET MENU */}
@@ -44,12 +50,16 @@ export default function Header() {
                         </div>
                         <ul className='flex lg:gap-8 sm:gap-8 gap-5 w-full justify-center items-center  lg:flex-row flex-col'>
                             <li className=' lg:w-auto  lg:border-0  border-b w-full lg:pb-0  pb-1 border-gray-300' >
-                                <Link href={'/'} className='hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px]' onClick={(() => setmobileNav(false))}>
+                                <Link href={'/'} className='hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm' onClick={(() => setmobileNav(false))}>
                                     Home
                                 </Link>
                             </li>
                             <li className='lg:w-auto  group   w-full lg:pb-0  pb-1 border-gray-300'>
-                                <Link href={'/'} className='group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px] flex items-center gap-2 border-b border-gray-300 pb-2 justify-between' onClick={() => setlivingMenu(!livingMenu)}>
+                                <Link href={'/'} className='group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm flex items-center gap-2 border-b border-gray-300 pb-2 justify-between' onClick={() => {
+                                    setsofaMenu(false),
+                                    setpageMenu(false)
+                                    setlivingMenu(!livingMenu)
+                                }}>
                                     living
 
                                     {livingMenu
@@ -66,7 +76,7 @@ export default function Header() {
 
                                 <div className={`w-full  bg-white   p-3 ${livingMenu ? 'scale-100 block' : 'scale-0 hidden'} duration- origin-top`}>
 
-                                    <button className={`w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1 `} onClick={() => {
+                                    <button className={`w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1  text-sm`} onClick={() => {
                                         setmirrorLivingMenu(false),
                                             setlivingStorageLivingMenu(false)
                                         settablelivingMenu(!tablelivingMenu)
@@ -88,28 +98,28 @@ export default function Header() {
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
                                                     <Link href={'/product-listing'} onClick={() => {
                                                         setmobileNav(false)
-                                                    }}>Side and End Tables</Link>
+                                                    }} className='text-sm'>Side and End Tables</Link>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Nest Of Tables</p>
+                                                    <p className='text-sm'>Nest Of Tables</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Console Table</p>
+                                                    <p className='text-sm'>Console Table</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Console Table</p>
+                                                    <p className='text-sm'>Console Table</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Coffee Table Sets</p>
+                                                    <p className='text-sm'>Coffee Table Sets</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Coffee Tables</p>
+                                                    <p className='text-sm'>Coffee Tables</p>
                                                 </li>
 
                                             </ul>
                                         </nav>
                                     </div>
-                                    <button className='w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1 ' onClick={() => {
+                                    <button className='w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1  text-sm' onClick={() => {
                                         settablelivingMenu(false),
                                             setmirrorLivingMenu(false)
                                         setlivingStorageLivingMenu(!livingStorageLivingMenu)
@@ -128,31 +138,31 @@ export default function Header() {
                                         <nav>
                                             <ul>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Prayer Units</p>
+                                                    <p className='text-sm'>Prayer Units</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Display Units</p>
+                                                    <p className='text-sm'>Display Units</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Shoe Racks</p>
+                                                    <p className='text-sm'>Shoe Racks</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Chest Of Drawers</p>
+                                                    <p className='text-sm'>Chest Of Drawers</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Cabinets and Sideboard</p>
+                                                    <p className='text-sm'>Cabinets and Sideboard</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>Bookshelves</p>
+                                                    <p className='text-sm'>Bookshelves</p>
                                                 </li>
                                                 <li className='border-b-1 border-gray-300 pb-1 mb-4'>
-                                                    <p>CTv Units</p>
+                                                    <p className='text-sm'>CTv Units</p>
                                                 </li>
                                             </ul>
                                         </nav>
                                     </div>
 
-                                    <button className='w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between  ' onClick={() => {
+                                    <button className='w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between text-sm  ' onClick={() => {
                                         settablelivingMenu(false),
                                             setlivingStorageLivingMenu(false),
                                             setmirrorLivingMenu(!mirrorLivingMenu)
@@ -171,7 +181,7 @@ export default function Header() {
                                         <nav>
                                             <ul>
                                                 <li className='border-b-1 border-gray-300 pb-1'>
-                                                    <p>Wooden Mirrors</p>
+                                                    <p className='text-sm'>Wooden Mirrors</p>
                                                 </li>
 
                                             </ul>
@@ -180,22 +190,165 @@ export default function Header() {
                                 </div>
 
                             </li>
+
+
                             <li className='lg:w-auto  group  border-b w-full lg:pb-0  pb-1 border-gray-300'>
-                                <Link href={'/'} className='group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px] flex items-center gap-2 justify-between'>
+                                <Link href={'/'} className='group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm flex items-center gap-2 justify-between' onClick={() => {
+                                    setlivingMenu(false),
+                                        setpageMenu(false)
+                                    setsofaMenu(!sofaMenu)
+                                }
+                                } >
                                     sofa
-                                    <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
+
+                                    {
+                                        sofaMenu
+                                            ?
+                                            <FaAngleUp className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                            :
+                                            <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                    }
+
+
                                 </Link>
 
                             </li>
-                            <li className='lg:w-auto  group  border-b w-full lg:pb-0  pb-1 border-gray-300'>
-                                <Link href={'/'} className='group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px] flex items-center justify-between gap-2'>
+
+
+                            <div className={`w-full  bg-white   p-3 ${sofaMenu ? 'scale-100 block' : 'scale-0 hidden'} duration- origin-top`}>
+
+                                <button className={`w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1  text-sm`} onClick={() => {
+                                    setsofaSetSofaMenu(false),
+                                        setsofaSwingSofaMenu(false)
+                                    setsofaBedSofaMenu(!sofaBedSofaMenu)
+                                }}>Sofa Cum Bed
+
+                                    {
+
+                                        sofaBedSofaMenu
+                                            ?
+                                            <FaAngleUp className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                            :
+                                            <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                    }
+
+                                </button>
+                                <div className={`w-full bg-white  p-6 ${sofaBedSofaMenu ? 'block' : 'hidden'}`}>
+                                    <nav>
+                                        <ul>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <p className='text-sm'>Wooden Sofa Cum Bed</p>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <button className='w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between my-1  text-sm' onClick={() => {
+                                    setsofaBedSofaMenu(false),
+                                        setsofaSwingSofaMenu(false)
+                                    setsofaSetSofaMenu(!sofaSetSofaMenu)
+
+                                }}>Sofa Sets
+                                    {
+
+                                        sofaSetSofaMenu
+                                            ?
+                                            <FaAngleUp className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                            :
+                                            <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                    }
+                                </button>
+                                <div className={`w-full bg-white  p-6 ${sofaSetSofaMenu ? 'block' : 'hidden'}`}>
+                                    <nav>
+                                        <ul>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <p className='text-sm'>L Shape Sofa</p>
+                                            </li>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <p className='text-sm'>1 Seater Sofa</p>
+                                            </li>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <p className='text-sm'>2 Seater Sofa</p>
+                                            </li>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <p className='text-sm'>3 Seater Sofa</p>
+                                            </li>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <p className='text-sm'>Wooden Sofa Sets</p>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <button className='w-full border-b-1 text-start py-2 border-gray-300 text-[#212121] flex items-center justify-between text-sm ' onClick={() => {
+                                    setsofaBedSofaMenu(false),
+                                        setsofaSetSofaMenu(false),
+                                        setsofaSwingSofaMenu(!sofaSwingSofaMenu)
+                                }}>Swing Jhula
+                                    {
+
+                                        sofaSwingSofaMenu
+                                            ?
+                                            <FaAngleUp className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                            :
+                                            <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                    }
+                                </button>
+
+                                <div className={`w-full bg-white  p-6 ${sofaSwingSofaMenu ? 'block' : 'hidden'}`}>
+                                    <nav>
+                                        <ul>
+                                            <li className='border-b-1 border-gray-300 pb-1'>
+                                                <p className='text-sm'>Wooden Julha</p>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <li className='lg:w-auto  group  border-b w-full lg:pb-0  pb-1 border-gray-300' onClick={() => {
+                                setlivingMenu(false),
+                                    setsofaMenu(false)
+                                setpageMenu(!pageMenu)
+                            }
+                            } >
+                                <p href={'/'} className='group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm flex items-center justify-between gap-2'>
                                     pages
-                                    <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
-                                </Link>
+
+                                    {
+                                        pageMenu
+                                            ?
+                                            <FaAngleUp className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                            :
+                                            <FaAngleDown className='text-[10px] group-hover:text-[#c09578] font-normal' />
+                                    }
+
+                                </p>
+                                <div className={`w-full bg-white  p-6 ${pageMenu ? 'block' : 'hidden'}`}>
+                                    <nav>
+                                        <ul>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <Link href={'/about'} onClick={() => {
+                                                    setmobileNav(false)
+                                                }} className='text-sm'>About Us</Link>
+                                            </li>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4' >
+                                                <Link href={'/cart'} className='text-sm' onClick={() => setmobileNav(false)}>Cart</Link>
+                                            </li>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <Link href={'/checkout'} className='text-sm' onClick={() => setmobileNav(false)}>Checkout</Link>
+                                            </li>
+                                            <li className='border-b-1 border-gray-300 pb-1 mb-4'>
+                                                <Link href={'/frequently-questions'} className='text-sm' onClick={() => setmobileNav(false)}>Frequently Questions</Link>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
 
                             </li>
                             <li className='lg:w-auto   border-b w-full lg:pb-0  pb-1 border-gray-300'>
-                                <Link href={'/'} className='hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px]'>
+                                <Link href={'/'} className='hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm'>
                                     contact us
                                 </Link>
                             </li>
@@ -369,7 +522,7 @@ export default function Header() {
                             <li className="w-auto group border-0 pb-0 relative">
                                 <Link
                                     href="/"
-                                    className="group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px] flex items-center gap-2"
+                                    className="group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm flex items-center gap-2"
                                 >
                                     sofa
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
@@ -429,7 +582,7 @@ export default function Header() {
                             <li className="w-auto group border-0 pb-0 relative">
                                 <Link
                                     href="/"
-                                    className="group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px] flex items-center gap-2"
+                                    className="group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm flex items-center gap-2"
                                 >
                                     pages
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
@@ -464,7 +617,7 @@ export default function Header() {
                             <li className="w-auto border-0 pb-0">
                                 <Link
                                     href={'/contact-us'}
-                                    className="hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px]"
+                                    className="hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm"
                                 >
                                     contact us
                                 </Link>

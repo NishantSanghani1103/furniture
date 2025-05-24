@@ -1,8 +1,10 @@
+"use client"
 import React from 'react'
 import Slider from 'react-slick'
 import { FaStar } from "react-icons/fa6";
 export default function CustomerReview() {
-    var settings = {
+
+    let settings = {
         dots: true,
         infinite: true,
         speed: 500,
