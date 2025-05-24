@@ -7,14 +7,14 @@ export default function WhyChoose() {
                 <div className='max-w-[1320px] lg:mx-auto mx-2' id='whyChoose-mid'>
 
                     <div className='text-center' id='whyChoose-mid-heading'>
-                        <h2 className='text-2xl font-semibold'>Why chose us?</h2>
+                        <h2 className='lg:text-2xl sm:text-2xl text-xl font-semibold'>Why chose us?</h2>
                         <div className='w-full grid lg:grid-cols-3 sm:grid-cols-3 gap-8 my-3 ' id='whyChoose-mid-content'>
                             <div className='whyChoose-mid-content-items'>
                                 <figure>
                                     <img src="/images/c65c4789-c1eb-4cfc-9961-3ab025317e08-1670161041.jpg" className='mx-auto' alt="" />
                                 </figure>
                                 <h3 className='text-[14px] font-semibold'>Creative Design</h3>
-                                <p className='py-3 text-[15px] text-[#5A5A5A]'>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
+                                <p className='py-3 lg:text-[15px] text-sm text-[#5A5A5A]'>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
                             </div>
 
                             <div className='whyChoose-mid-content-items'>
@@ -22,7 +22,7 @@ export default function WhyChoose() {
                                     <img src="/images/89df96b6-b70d-463b-affb-58a74d49ed6b-1670161065.jpg" className='mx-auto' alt="" />
                                 </figure>
                                 <h3 className='text-[14px] font-semibold'>100% Money Back Guarantee</h3>
-                                <p className='py-3 text-[15px] text-[#5A5A5A]'>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
+                                <p className='py-3 lg:text-[15px] text-sm text-[#5A5A5A]'>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
                             </div>
 
                             <div className='whyChoose-mid-content-items'>
@@ -30,7 +30,7 @@ export default function WhyChoose() {
                                     <img src="/images/eb6a7519-f0f9-469f-af25-4ba0536060fd-1670161090.jpg" className='mx-auto' alt="" />
                                 </figure>
                                 <h3 className='text-[14px] font-semibold'>Online Support 24/7</h3>
-                                <p className='py-3 text-[15px] text-[#5A5A5A]'>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
+                                <p className='py-3 lg:text-[15px] text-sm text-[#5A5A5A]'>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet enim</p>
                             </div>
                         </div>
                     </div>

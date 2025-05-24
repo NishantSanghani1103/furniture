@@ -17,8 +17,8 @@ export default function Checkout() {
             <section className='max-w-full my-8' id='checkout'>
                 <div className='max-w-[1320px] lg:mx-auto mx-2' id='checkout-mid'>
                     <div className='w-full text-center' id='checkout-mid-heading'>
-                        <h2 className=' text-4xl font-semibold'>Checkout</h2>
-                        <div className='flex items-center justify-center gap-1 my-3 '>
+                        <h2 className=' lg:text-4xl sm:text-4xl text-2xl font-semibold'>Checkout</h2>
+                        <div className='flex items-center justify-center gap-1 lg:my-3 sm:my-3 my-2 '>
 
                             <Link href={'/'} className='text-sm hover:text-[#C09578]'>Home</Link>
                             <FaAngleRight className='text-[#C09578]' />
@@ -201,34 +201,34 @@ export default function Checkout() {
                                         <table className="min-w-full border border-gray-200">
                                             <thead className="bg-gray-100">
                                                 <tr>
-                                                    <th className="text-center px-6 py-3 text-gray-800 font-semibold text-lg border-b border-gray-300">
+                                                    <th className="text-center px-6 py-3 text-gray-800 font-semibold lg:text-lg text-base  border-b border-gray-300">
                                                         Product
                                                     </th>
-                                                    <th className="text-center px-6 py-3 text-gray-800 font-semibold text-lg border-b border-gray-300">
+                                                    <th className="text-center px-6 py-3 text-gray-800 font-semibold lg:text-lg text-base  border-b border-gray-300">
                                                         Total
                                                     </th>
                                                 </tr>
                                             </thead>
                                             <tbody className='text-center'>
                                                 <tr className="border-b border-gray-200">
-                                                    <td className="px-6 py-4 font-medium text-gray-900">
+                                                    <td className="px-6 py-4 lg:text-base text-sm font-medium text-gray-900">
                                                         Evan Coffee Table × 1
                                                     </td>
-                                                    <td className="px-6 py-4 text-center font-semibold text-gray-900">
+                                                    <td className="px-6 py-4 lg:text-base text-sm text-center font-semibold text-gray-900">
                                                         Rs. 2,300
                                                     </td>
                                                 </tr>
                                                 <tr className="border-b border-gray-200">
-                                                    <td className="px-6 py-4 text-gray-700">Cart Subtotal</td>
-                                                    <td className="px-6 py-4 text-center text-gray-700">Rs. 2,300</td>
+                                                    <td className="px-6 py-4 lg:text-base text-sm text-gray-700">Cart Subtotal</td>
+                                                    <td className="px-6 py-4 lg:text-base text-sm text-center text-gray-700">Rs. 2,300</td>
                                                 </tr>
                                                 <tr className="border-b border-gray-200">
-                                                    <td className="px-6 py-4 text-gray-700">Discount (–)</td>
-                                                    <td className="px-6 py-4 text-center text-gray-700">Rs. 0</td>
+                                                    <td className="px-6 py-4 lg:text-base text-sm text-gray-700">Discount (–)</td>
+                                                    <td className="px-6 py-4 lg:text-base text-sm text-center text-gray-700">Rs. 0</td>
                                                 </tr>
                                                 <tr>
-                                                    <td className="px-6 py-4 font-bold text-gray-900">Order Total</td>
-                                                    <td className="px-6 py-4 text-center font-bold text-gray-900">
+                                                    <td className="px-6 py-4 lg:text-base text-sm font-bold text-gray-900">Order Total</td>
+                                                    <td className="px-6 py-4 lg:text-base text-sm text-center font-bold text-gray-900">
                                                         Rs. 2,300
                                                     </td>
                                                 </tr>

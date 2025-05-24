@@ -449,7 +449,7 @@ export default function Header() {
                                 <div className='bg-white shadow-lg w-[580px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
                                     <div className='w-full grid grid-cols-3 gap-5 p-5' id='megaMenu-living'>
                                         <div>
-                                            <h2 className='text-md uppercase font-semibold py-1'>Tables</h2>
+                                            <h2 className='text-[13px] uppercase font-semibold py-1'>Tables</h2>
                                             <nav>
                                                 <ul>
                                                     <li className='py-1'>
@@ -473,7 +473,7 @@ export default function Header() {
 
 
                                         <div>
-                                            <h2 className='text-md uppercase font-semibold py-1'>Living Storage</h2>
+                                            <h2 className='text-[13px] uppercase font-semibold py-1'>Living Storage</h2>
                                             <nav>
                                                 <ul>
                                                     <li className='py-1'>
@@ -504,7 +504,7 @@ export default function Header() {
                                         </div>
 
                                         <div>
-                                            <h2 className='text-md uppercase font-semibold py-1'>Mirrors</h2>
+                                            <h2 className='text-[13px] uppercase font-semibold py-1'>Mirrors</h2>
                                             <nav>
                                                 <ul>
                                                     <li className='py-1'>
@@ -522,7 +522,7 @@ export default function Header() {
                             <li className="w-auto group border-0 pb-0 relative">
                                 <Link
                                     href="/"
-                                    className="group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm flex items-center gap-2"
+                                    className="group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px] flex items-center gap-2"
                                 >
                                     sofa
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
@@ -530,7 +530,7 @@ export default function Header() {
                                 <div className='bg-white shadow-lg w-[580px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
                                     <div className='w-full grid grid-cols-3 gap-5 p-5' id='megaMenu-living'>
                                         <div>
-                                            <h2 className='text-md uppercase font-semibold py-1'>Sofa Cum Bed</h2>
+                                            <h2 className='text-[13px] uppercase font-semibold py-1'>Sofa Cum Bed</h2>
                                             <nav>
                                                 <ul>
                                                     <li className='py-1'>
@@ -542,7 +542,7 @@ export default function Header() {
 
 
                                         <div>
-                                            <h2 className='text-md uppercase font-semibold py-1'>Sofa Sets</h2>
+                                            <h2 className='text-[13px] uppercase font-semibold py-1'>Sofa Sets</h2>
                                             <nav>
                                                 <ul>
                                                     <li className='py-1'>
@@ -565,7 +565,7 @@ export default function Header() {
                                         </div>
 
                                         <div>
-                                            <h2 className='text-md uppercase font-semibold py-1'>Swing Jhula</h2>
+                                            <h2 className='text-[13px] uppercase font-semibold py-1'>Swing Jhula</h2>
                                             <nav>
                                                 <ul>
                                                     <li className='py-1'>
@@ -582,7 +582,7 @@ export default function Header() {
                             <li className="w-auto group border-0 pb-0 relative">
                                 <Link
                                     href="/"
-                                    className="group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm flex items-center gap-2"
+                                    className="group-hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px] flex items-center gap-2"
                                 >
                                     pages
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
@@ -617,7 +617,7 @@ export default function Header() {
                             <li className="w-auto border-0 pb-0">
                                 <Link
                                     href={'/contact-us'}
-                                    className="hover:text-[#c09578] font-semibold uppercase text-[#212121] text-sm"
+                                    className="hover:text-[#c09578] font-semibold uppercase text-[#212121] text-[13px]"
                                 >
                                     contact us
                                 </Link>

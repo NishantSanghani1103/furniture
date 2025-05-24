@@ -14,7 +14,7 @@ export default function FeaturedProduct() {
                         <button className={`capitalize lg:text-xl sm:text-xl text-sm border-2   lg:py-3 lg:px-8 sm:py-3 sm:px-8 px-4 py-3 font-semibold  ${featuredItems == 2 ? ' border-[#C09578] text-[#C09578]': 'border-gray-200'}  hover:cursor-pointer`} onClick={() => setfeaturedItems(2)}>new arrivals</button>
                         <button className={`capitalize lg:text-xl sm:text-xl text-sm border-2   lg:py-3 lg:px-8 sm:py-3 sm:px-8 px-4 py-3 font-semibold  ${featuredItems == 3 ? ' border-[#C09578] text-[#C09578]': 'border-gray-200'}  hover:cursor-pointer`} onClick={() => setfeaturedItems(3)}>onsale</button>
                     </div>
-                    <div className={`grid lg:grid-cols-4  sm:grid-cols-3 gap-4 my-6 gap-y-6  ${featuredItems == 1 ? 'block' : 'hidden'}`}>
+                    <div className={`grid lg:grid-cols-4 lg:mx-0 sm:mx-0  mx-3   sm:grid-cols-3 gap-4 my-6 gap-y-6  ${featuredItems == 1 ? 'block' : 'hidden'}`}>
                         <div className='shadow-lg shadow-gray-300 bg-white '>
                             <figure>
                                 <img src="/images/1617829052195Caroline Study Tables__.jpg" alt="" />

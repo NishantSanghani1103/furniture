@@ -21,8 +21,8 @@ export default function page() {
             <section className='max-w-full my-8' id='my-dashboard'>
                 <div className='max-w-[1320px] lg:mx-auto mx-2' id='mydashboard-mid'>
                     <div className='w-full text-center' id='muAccount-mid-heading'>
-                        <h2 className=' text-4xl font-semibold'>My Dashboard</h2>
-                        <div className='flex items-center justify-center gap2 my-3 '>
+                        <h2 className=' lg:text-4xl sm:text-text-4xl text-2xl font-semibold'>My Dashboard</h2>
+                        <div className='flex items-center justify-center gap2 lg:my-3 sm:my-3 my-2 '>
 
                             <Link href={'/'} className='text-sm hover:text-[#C09578]'>Home</Link>
                             <FaAngleRight className='text-[#C09578]' />
@@ -58,14 +58,14 @@ export default function page() {
                         <div id='my-dashboard-content'>
 
                             <div className={`${dashBoardButton == 1 ? 'block' : 'hidden'}`} id='my-dashboard'>
-                                <h3 className='text-xl font-semibold'>My Dashboard</h3>
-                                <p className='py-3 text-base font-normal text-[#5A5A5A] '>From your account dashboard. you can easily check & view your <span className='text-black  font-semibold'> recent orders </span>, manage your   <span className='text-black font-semibold'>shipping and billing addresses </span> and <span className='text-black font-semibold'> Edit your password and account details.</span> </p>
+                                <h3 className='lg:text-xl text-base font-semibold'>My Dashboard</h3>
+                                <p className='py-3 lg:text-base text-sm font-normal text-[#5A5A5A] '>From your account dashboard. you can easily check & view your <span className='text-black  font-semibold'> recent orders </span>, manage your   <span className='text-black font-semibold'>shipping and billing addresses </span> and <span className='text-black font-semibold'> Edit your password and account details.</span> </p>
                             </div>
 
                             <div className={`${dashBoardButton == 2 ? 'block' : 'hidden'}`} id='orders'>
                                 <h3 className='text-xl font-semibold'>Orders</h3>
                                 <div className="lg:overflow-x-auto sm:overflow-x-auto overflow-x-scroll my-5">
-                                    <table className="min-w-full text-sm text-left border border-gray-200">
+                                    <table className="max-w-full text-sm text-left border border-gray-200">
                                         <thead className="bg-gray-100 text-center">
                                             <tr>
                                                 <th className="px-4 py-3 font-semibold text-gray-800 border border-gray-200">Order</th>
@@ -103,7 +103,7 @@ export default function page() {
 
 
                                     <div id='billing-address'>
-                                        <h3 className='text-xl font-normal capitalize'>Billing address</h3>
+                                        <h3 className='lg:text-xl text-base font-normal capitalize'>Billing address</h3>
                                         <div className='w-full border-1 border-gray-300 rounded-sm my-2 p-4' id='billing-form'>
                                             <form action="">
                                                 <label htmlFor="" className='text-sm cursor-pointer font-semibold hover:text-[#C09578]'>Billing Name*</label>
@@ -124,7 +124,7 @@ export default function page() {
 
                                                 <div className='relative mb-2' id='country'>
 
-                                                    <button type='button' className='w-full text-left p-2 border-1 border-gray-200 rounded-sm mt-2 text-gray-600' onClick={() => setcountryBillingButton(!countryBillingButton)}>{countryBillingTitle}
+                                                    <button type='button' className='w-full text-left lg:text-base text-sm p-2 border-1 border-gray-200 rounded-sm mt-2 text-gray-600' onClick={() => setcountryBillingButton(!countryBillingButton)}>{countryBillingTitle}
                                                     </button>
                                                     <div className={`w-full border-1 h-[500px] overflow-y-scroll  border-gray-200 rounded-sm absolute top-[100%] bg-white ${countryBillingButton ? 'block' : 'hidden'}`}>
                                                         <nav>
@@ -161,7 +161,7 @@ export default function page() {
                                     </div>
 
                                     <div id='shipping-address'>
-                                        <h3 className='text-xl font-normal capitalize'>shipping address</h3>
+                                        <h3 className='lg:text-xl text-base font-normal capitalize'>shipping address</h3>
                                         <div className='w-full border-1 border-gray-300 rounded-sm my-2 p-4' id='shipping-form'>
                                             <form action="">
                                                 <label htmlFor="" className='text-sm cursor-pointer font-semibold hover:text-[#C09578]'>Shipping Name*</label>
@@ -181,7 +181,7 @@ export default function page() {
 
                                                 <div className='relative mb-2' id='country'>
 
-                                                    <button type='button' className='w-full text-left p-2 border-1 border-gray-200 rounded-sm mt-2 text-gray-600' onClick={() => setcountryShippingButton(!countryShippingButton)}>{countryShippingTitle}
+                                                    <button type='button' className='w-full text-left lg:text-base text-sm p-2 border-1 border-gray-200 rounded-sm mt-2 text-gray-600' onClick={() => setcountryShippingButton(!countryShippingButton)}>{countryShippingTitle}
                                                     </button>
                                                     <div className={`w-full border-1 h-[500px] overflow-y-scroll  border-gray-200 rounded-sm absolute top-[100%] bg-white ${countryShippingButton ? 'block' : 'hidden'}`}>
                                                         <nav>
@@ -191,7 +191,7 @@ export default function page() {
                                                                     Country.map((value, index) => {
                                                                         let { id, title } = value
                                                                         return (
-                                                                            <li key={id} className=' text-base py-1 hover:bg-blue-600 hover:text-white w-full p-3 ' onClick={() => {
+                                                                            <li key={id} className=' lg:text-base text-sm py-1 hover:bg-blue-600 hover:text-white w-full p-3 ' onClick={() => {
                                                                                 setcountryShippingButton(false)
                                                                                 setcountryShippingTitle(title)
                                                                             }}>
@@ -223,7 +223,7 @@ export default function page() {
                             </div>
 
                             <div className={`${dashBoardButton == 4 ? 'block' : 'hidden'}`} id='profile'>
-                                <h3 className='text-xl font-semibold'>My Profile</h3>
+                                <h3 className='lg:text-xl text-base font-semibold'>My Profile</h3>
                                 <div className='w-full border-1 border-gray-300 rounded-sm my-2 p-4' id='billing-form'>
                                     <form action="">
                                         <input type="radio" name='gender' checked
@@ -253,7 +253,7 @@ export default function page() {
 
 
                             <div className={`${dashBoardButton == 5 ? 'block' : 'hidden'}`} id='cahngePassword'>
-                                <h3 className='text-xl font-semibold'>Change Password</h3>
+                                <h3 className='lg:text-xl text-base font-semibold'>Change Password</h3>
                                 <div className='w-full border-1 border-gray-300 rounded-sm my-2 p-4' id='changePassword-form'>
                                     <form action="">
                                         <label htmlFor="" className='text-sm cursor-pointer font-semibold hover:text-[#C09578]'>Current Password</label>

@@ -18,8 +18,8 @@ export default function ProductListing() {
             <section className='max-w-full my-8' id='product-listing'>
                 <div className='max-w-[1320px] lg:mx-auto mx-2' id='product-listing-mid'>
                     <div className='w-full text-center' id='product-listing-mid-heading'>
-                        <h2 className=' text-4xl font-semibold'>Product Listing</h2>
-                        <div className='flex items-center justify-center gap-1 my-3 '>
+                        <h2 className=' lg:text-4xl sm:text-4xl text-2xl font-semibold'>Product Listing</h2>
+                        <div className='flex items-center justify-center gap-1 lg:my-3 sm:my-3 my-2 '>
 
                             <Link href={'/'} className='text-sm hover:text-[#C09578]'>Home</Link>
                             <FaAngleRight className='text-[#C09578]' />
@@ -36,47 +36,47 @@ export default function ProductListing() {
                     <div className='max-w-full grid lg:grid-cols-[25%_auto] gap-8'>
                         <div className='lg:order-1 order-2' id='category'>
                             <div className='h-[500px] overflow-y-scroll border-b-1 border-gray-100 mb-10 custom-scrollbar' >
-                                <h2 className='text-3xl font-semibold capitalize'>Categories</h2>
+                                <h2 className='lg:text-3xl text-2xl font-semibold capitalize'>Categories</h2>
                                 <div className='my-6' id='product-listing-category-items'>
                                     <div id='product-listing-category-items'>
 
                                         <div className='product-listing-category-items-heading'>
-                                            <h3 className='text-xl text-[#5A5A5A] font-semibold'>Tables</h3>
+                                            <h3 className='lg:text-xl text-lg text-[#5A5A5A] font-semibold'>Tables</h3>
                                         </div>
                                         <div className='my-4'>
                                             <ul>
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Side and End Tables</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Side and End Tables</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Nest Of Tables</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Nest Of Tables</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Console Table</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Console Table</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Coffee Table Sets</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Coffee Table Sets</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Coffee Tables</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Coffee Tables</label>
                                                     </div>
                                                 </li>
 
@@ -86,7 +86,7 @@ export default function ProductListing() {
 
 
                                         <div className='product-listing-category-items-heading'>
-                                            <h3 className='text-xl text-[#5A5A5A] font-semibold'>Living Storage</h3>
+                                            <h3 className='lg:text-xl text-lg text-[#5A5A5A] font-semibold'>Living Storage</h3>
                                         </div>
 
                                         <div className='my-4' id='product-listing-category-items-livingStore'>
@@ -94,49 +94,49 @@ export default function ProductListing() {
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Prayer Units</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Prayer Units</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Display Unit</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Display Unit</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Shoe Racks</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Shoe Racks</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Chest Of Drawers</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Chest Of Drawers</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Cabinets and Sideboard</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Cabinets and Sideboard</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Bookshelves</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Bookshelves</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Tv Units</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Tv Units</label>
                                                     </div>
                                                 </li>
 
@@ -144,7 +144,7 @@ export default function ProductListing() {
                                         </div>
 
                                         <div className='product-listing-category-items-heading'>
-                                            <h3 className='text-xl text-[#5A5A5A] font-semibold'>Mirrors</h3>
+                                            <h3 className='lg:text-xl text-lg text-[#5A5A5A] font-semibold'>Mirrors</h3>
                                         </div>
 
                                         <div className='my-4' id='product-listing-category-items-mirrors'>
@@ -152,7 +152,7 @@ export default function ProductListing() {
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Wooden Mirrors</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Wooden Mirrors</label>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -160,7 +160,7 @@ export default function ProductListing() {
 
 
                                         <div className='product-listing-category-items-heading'>
-                                            <h3 className='text-xl text-[#5A5A5A] font-semibold'>Sofa Cum Bed</h3>
+                                            <h3 className='lg:text-xl text-lg text-[#5A5A5A] font-semibold'>Sofa Cum Bed</h3>
                                         </div>
 
                                         <div className='my-4' id='product-listing-category-items-sofaBed'>
@@ -168,14 +168,14 @@ export default function ProductListing() {
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Wooden Sofa Cum Bed</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Wooden Sofa Cum Bed</label>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </div>
 
                                         <div className='product-listing-category-items-heading'>
-                                            <h3 className='text-xl text-[#5A5A5A] font-semibold'>Sofa Sets</h3>
+                                            <h3 className='lg:text-xl text-lg text-[#5A5A5A] font-semibold'>Sofa Sets</h3>
                                         </div>
 
                                         <div className='my-4' id='product-listing-category-sofa'>
@@ -183,35 +183,35 @@ export default function ProductListing() {
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>L Shape Sofa</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>L Shape Sofa</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>1 Seater Sofa</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>1 Seater Sofa</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>2 Seater Sofa</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>2 Seater Sofa</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>3 Seater Sofa</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>3 Seater Sofa</label>
                                                     </div>
                                                 </li>
 
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Wooden Sofa Sets</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Wooden Sofa Sets</label>
                                                     </div>
                                                 </li>
 
@@ -220,7 +220,7 @@ export default function ProductListing() {
                                         </div>
 
                                         <div className='product-listing-category-items-heading'>
-                                            <h3 className='text-xl text-[#5A5A5A] font-semibold'>Swing Jhula</h3>
+                                            <h3 className='lg:text-xl text-lg text-[#5A5A5A] font-semibold'>Swing Jhula</h3>
                                         </div>
 
                                         <div className='my-4' id='product-listing-category-items-jhulha'>
@@ -228,7 +228,7 @@ export default function ProductListing() {
                                                 <li className='py-2'>
                                                     <div className='flex items-center gap-3'>
                                                         <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Wooden Jhula</label>
+                                                        <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Wooden Jhula</label>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -239,7 +239,7 @@ export default function ProductListing() {
                             </div>
 
                             <div className='h-[400px] overflow-y-scroll border-b-1 border-gray-100 mb-10 custom-scrollbar' id='material'>
-                                <h2 className='text-3xl font-semibold capitalize'>Material</h2>
+                                <h2 className='lg:text-3xl text-2xl font-semibold capitalize'>Material</h2>
                                 <div className='my-6' id='product-listing-material-items'>
 
                                     <div className='my-4' id='product-listing-material-items'>
@@ -247,70 +247,70 @@ export default function ProductListing() {
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Sheesham Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Sheesham Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Teak Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Teak Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Rose Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Rose Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Satin Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Satin Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Sal Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Sal Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Marandi Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Marandi Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Mahogany Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Mahogany Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Mulberry Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Mulberry Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Deodar Wood</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Deodar Wood</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>JackFruit</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>JackFruit</label>
                                                 </div>
                                             </li>
 
@@ -324,7 +324,7 @@ export default function ProductListing() {
 
 
                             <div className=' border-b-1 border-gray-100 mb-10' id='color'>
-                                <h2 className='text-3xl font-semibold capitalize'>Color</h2>
+                                <h2 className='lg:text-3xl text-2xl font-semibold capitalize'>Color</h2>
                                 <div className='my-6' id='product-listing-color-items'>
 
                                     <div className='my-4' id='product-listing-color-items'>
@@ -332,56 +332,56 @@ export default function ProductListing() {
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Burnt Amber</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Burnt Amber</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Golden Teak</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Golden Teak</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Carbon Black</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Carbon Black</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Faded Oak</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Faded Oak</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Weathered Walnut</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Weathered Walnut</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Mango Green</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Mango Green</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Cobalt Blue</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Cobalt Blue</label>
                                                 </div>
                                             </li>
 
                                             <li className='py-2'>
                                                 <div className='flex items-center gap-3'>
                                                     <input type="checkbox" className='w-[17px] h-[17px]' />
-                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] text-base'>Black Finish</label>
+                                                    <label htmlFor="" className='text-[#5A5A5A] font-[400] lg:text-base text-sm'>Black Finish</label>
                                                 </div>
                                             </li>
                                         </ul>
@@ -395,9 +395,9 @@ export default function ProductListing() {
 
                         <div className='lg:order-2 order-1' id='product'>
                             <div className='w-full border-1 p-3 border-gray-100 rounded-sm flex lg:flex-row sm:flex-row flex-col justify-end items-center gap-4' id='product-sortBy'>
-                                <p className='text-base text-[#5A5A5A capitalize]'>Sort By : </p>
+                                <p className='lg:text-base  text-sm text-[#5A5A5A capitalize]'>Sort By : </p>
                                 <div className='relative'>
-                                    <button className='capitalize border-1 border-gray-100 px-5 py-2 cursor-pointer font-semibold text-[#5A5A5A] flex items-center gap-3 ' onClick={() => setsortButton(!sortButton)}>{sortButtonTitle} <RiArrowDropDownLine className='text-2xl' /> </button>
+                                    <button className='capitalize border-1 border-gray-100 px-5 py-2 cursor-pointer font-semibold text-[#5A5A5A] flex items-center gap-3 lg:text-base  text-sm' onClick={() => setsortButton(!sortButton)}>{sortButtonTitle} <RiArrowDropDownLine className='text-2xl' /> </button>
 
                                     <div className={`bg-white border-1 border-gray-100 rounded-sm w-[210px]  absolute top-[100%] py-3 ${sortButton ? 'block' : 'hidden'}`}>
                                         <ul>
@@ -409,7 +409,7 @@ export default function ProductListing() {
                                                             setsortButton(false)
                                                             setsortButtonTitle(title)
                                                         }}>
-                                                            <p className='text-base capitalize font-normal'>{title}</p>
+                                                            <p className='lg:text-base  text-sm capitalize font-normal'>{title}</p>
                                                         </li>
                                                     )
                                                 })
@@ -420,7 +420,7 @@ export default function ProductListing() {
 
                                     </div>
                                 </div>
-                                <p>Showing 1–1 of 1 results</p>
+                                <p className='lg:text-base sm:text-base text-sm'>Showing 1–1 of 1 results</p>
                             </div>
 
                             <div className='grid lg:grid-cols-3 sm:grid-cols-3 my-8'>

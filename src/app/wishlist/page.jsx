@@ -7,8 +7,8 @@ export default function wishlist() {
             <section className='max-w-full my-8' id='cart'>
                 <div className='max-w-[1320px] lg:mx-auto mx-2' id='cart-mid'>
                     <div className='w-full text-center' id='muAccount-mid-heading'>
-                        <h2 className=' text-4xl font-semibold'>My Wishlist</h2>
-                        <div className='flex items-center justify-center gap-1 my-3 '>
+                        <h2 className=' lg:text-4xl sm:text-4xl text-2xl font-semibold'>My Wishlist</h2>
+                        <div className='flex items-center justify-center gap-1 lg:my-3 sm:my-3 my-2 '>
 
                             <Link href={'/'} className='text-sm hover:text-[#C09578]'>Home</Link>
                             <FaAngleRight className='text-[#C09578]' />

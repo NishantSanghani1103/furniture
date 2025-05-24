@@ -17,7 +17,7 @@ export default function CustomerReview() {
             <section className='max-w-full py-5'>
                 <div className='max-w-[1320px]  mx-auto'>
                     <div className='text-center' id='heading'>
-                        <h2 className='text-2xl font-semibold'>What Our Custumers Say ?</h2>
+                        <h2 className='lg:text-2xl sm:text-2xl text-xl font-semibold'>What Our Custumers Say ?</h2>
                     </div>
                     <div className=' w-[80%] mx-auto'>
                         <Slider className='customerSlider' {...settings}>
@@ -29,7 +29,7 @@ export default function CustomerReview() {
                                             <figure>
                                                 <img src="/images/35b5a0a0-e80f-4038-a75a-2811de92118b-1670161614.png" className='mx-auto' alt="" />
                                             </figure>
-                                            <p className='text-lg  text-center font-semibold  py-2    '>Kathy Young</p>
+                                            <p className='lg:text-lg sm:text-lg text-sm  text-center font-semibold  py-2'>Kathy Young</p>
                                             <span className='text-sm'>CEO of SunPark</span>
                                             <div className='flex  justify-center my-5 text-[#C09578] text-sm'>
                                                 <FaStar className='' />
@@ -50,7 +50,7 @@ export default function CustomerReview() {
                                             <figure>
                                                 <img src="/images/3023f95a-ce85-434c-b9c5-2b0943b865e2-1670161621.jpg" className='mx-auto' alt="" />
                                             </figure>
-                                            <p className='text-lg  text-center font-semibold  py-2    '>Kathy Young</p>
+                                            <p className='lg:text-lg sm:text-lg text-sm  text-center font-semibold  py-2'>Kathy Young</p>
                                             <span className='text-sm'>CEO of SunPark</span>
                                             <div className='flex  justify-center my-5 text-[#C09578] text-sm'>
                                                 <FaStar className='' />
@@ -71,7 +71,7 @@ export default function CustomerReview() {
                                             <figure>
                                                 <img src="/images/c6381687-5a5e-4914-9373-9cbec4937be6-1670161604.jpg" className='mx-auto' alt="" />
                                             </figure>
-                                            <p className='text-lg  text-center font-semibold  py-2    '>Kathy Young</p>
+                                            <p className='lg:text-lg sm:text-lg text-sm  text-center font-semibold  py-2    '>Kathy Young</p>
                                             <span className='text-sm'>CEO of SunPark</span>
                                             <div className='flex  justify-center my-5 text-[#C09578] text-sm'>
                                                 <FaStar className='' />

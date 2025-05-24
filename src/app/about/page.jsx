@@ -1,4 +1,4 @@
-"use ckient"
+"use client"
 import React from 'react'
 import AboutContent from './AboutComponents/AboutContent'
 import WhyChoose from './AboutComponents/WhyChoose'
@@ -12,7 +12,7 @@ export default function About() {
             <section className='max-w-full'>
                 <AboutContent />
                 <WhyChoose />
-                <div className='mb-10'>
+                <div className='w-full mb-10'>
                     <CustomerReview />
                 </div>
             </section>
