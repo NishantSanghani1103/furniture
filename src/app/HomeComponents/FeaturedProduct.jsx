@@ -180,7 +180,7 @@ export default function FeaturedProduct() {
 
 
 
-                    <div className={`grid lg:grid-cols-4  sm:grid-cols-3 gap-4 my-6 gap-y-6  ${featuredItems == 2 ? 'block' : 'hidden'}`}>
+                    <div className={`grid lg:grid-cols-4 lg:mx-0 sm:mx-0  mx-3  sm:grid-cols-3 gap-4 my-6 gap-y-6  ${featuredItems == 2 ? 'block' : 'hidden'}`}>
                         <div className='shadow-lg shadow-gray-300 bg-white '>
                             <figure>
                                 <img src="/images/1617981904164Hrithvik Stool__.jpg" alt="" />
@@ -346,7 +346,7 @@ export default function FeaturedProduct() {
 
 
 
-                    <div className={`grid lg:grid-cols-4  sm:grid-cols-3 gap-4 my-6 gap-y-6  ${featuredItems == 3 ? 'block' : 'hidden'}`}>
+                    <div className={`grid lg:grid-cols-4 lg:mx-0 sm:mx-0  mx-3 sm:grid-cols-3 gap-4 my-6 gap-y-6  ${featuredItems == 3 ? 'block' : 'hidden'}`}>
                         <div className='shadow-lg shadow-gray-300 bg-white '>
                             <figure>
                                 <img src="/images/1617828789760Rex Console Table__.jpg" alt="" />
