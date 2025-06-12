@@ -424,14 +424,18 @@ export default function ProductListing() {
                             </div>
 
                             <div className='grid lg:grid-cols-3 sm:grid-cols-3 my-8'>
-                                
+
                                 <div className='shadow-lg shadow-gray-300 bg-white '>
                                     <figure>
                                         <img src="/images/1617981904164Hrithvik Stool__.jpg" alt="" />
                                     </figure>
                                     <div className='text-center'>
-                                        <p className='text-sm py-3'>Side and End Tables</p>
-                                        <h2 className='text-[15px] font-semibold hover:text-[#C09578] hover:cursor-pointer'>Hrithvik Stool</h2>
+                                        <Link href={`/product-details`}>
+                                            <div>
+                                                <p className='text-sm py-3'>Side and End Tables</p>
+                                                <h2 className='text-[15px] font-semibold hover:text-[#C09578] hover:cursor-pointer'>Hrithvik Stool</h2>
+                                            </div>
+                                        </Link>
                                         <hr className='w-[80%] mx-auto border-1 h-px border-gray-100 my-2' />
                                         <p className='py-3'>
                                             <span className='line-through text-gray-600 font-semibold text-[14px]'>Rs.7,000</span>&nbsp;&nbsp;

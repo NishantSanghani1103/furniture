@@ -446,7 +446,7 @@ export default function Header() {
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
                                 </Link>
 
-                                <div className='bg-white shadow-lg w-[580px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
+                                <div className='bg-white shadow-lg my-5 w-[580px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
                                     <div className='w-full grid grid-cols-3 gap-5 p-5' id='megaMenu-living'>
                                         <div>
                                             <h2 className='text-[13px] uppercase font-semibold py-1'>Tables</h2>
@@ -527,7 +527,7 @@ export default function Header() {
                                     sofa
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
                                 </Link>
-                                <div className='bg-white shadow-lg w-[580px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
+                                <div className='bg-white shadow-lg w-[580px] my-5 absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
                                     <div className='w-full grid grid-cols-3 gap-5 p-5' id='megaMenu-living'>
                                         <div>
                                             <h2 className='text-[13px] uppercase font-semibold py-1'>Sofa Cum Bed</h2>
@@ -588,7 +588,7 @@ export default function Header() {
                                     <FaAngleDown className="text-[10px] group-hover:text-[#c09578] font-normal" />
                                 </Link>
 
-                                <div className='bg-white shadow-lg w-[200px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
+                                <div className='bg-white my-5 shadow-lg w-[200px] absolute top-[100%] origin-top scale-0 duration-300 group-hover:scale-100 z-99 border-1 border-gray-300'>
                                     <div className='w-full  p-5' id='megaMenu-living'>
                                         <div>
                                             <nav>
@@ -639,7 +639,6 @@ export default function Header() {
                         <p className='text-gray-600 border-y-1 border-gray-400 py-5 px-3'>Your shopping cart is empty!</p>
                     </div>
                 </div>
-
             </header >
         </>
     )

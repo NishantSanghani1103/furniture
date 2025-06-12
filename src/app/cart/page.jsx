@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 import { FaAngleRight } from "react-icons/fa";
+import CartItems from './CartItems';
+import CartSummary from './CartSummary';
 export default function page() {
     return (
         <>
@@ -21,11 +23,15 @@ export default function page() {
                             <figure>
                                 <img src="/images/my-Order.jpg" className='mx-auto' alt="" />
                             </figure>
-                            <p  className='text-center text-sm'>Your shopping cart is empty!</p>
+                            <p className='text-center text-sm'>Your shopping cart is empty!</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+
+            {/* <CartItems />   
+            <CartSummary /> */}
         </>
     )
 }
